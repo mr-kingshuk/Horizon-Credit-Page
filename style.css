@@ -7,6 +7,9 @@
 :root {
   --num-vis-slides: 3;
   --caro-container-width: 81vw;
+  --num-vis-spons: 5;
+  --spons-translate: calc(-100% / var(--num-vis-spons) * 9);
+
 }
 
 
@@ -99,4 +102,46 @@ h2
 
 .indicators li.selected {
   background: transparent;
+}
+
+.sponsors
+{
+    height: 8vh;
+    width:100vw;
+    background-color: grey;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.sponsors-content
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    animation: scrolling 20s linear infinite;
+}
+
+@keyframes scrolling
+{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(var(--spons-translate));
+    }
+}
+
+.sponsors-content li
+{
+    color: black;
+    border: 2px solid black;
+    list-style: none;
+    height: 100%;
+    width: calc(100% / var(--num-vis-spons));
+    flex-shrink: 0;
+
+    display: grid;
+    place-items: center;
 }
