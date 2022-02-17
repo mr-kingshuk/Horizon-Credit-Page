@@ -9,6 +9,13 @@
   --caro-container-width: 81vw;
 }
 
+
+section
+{
+    margin: 80px 0;
+}
+
+
 h2
 {
     margin: 20px 0;

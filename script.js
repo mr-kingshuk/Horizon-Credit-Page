@@ -20,10 +20,14 @@ sections.forEach(section => {
     // number of times we can swipe left or right
     var swipes = totalSlides - numVisSlides;
 
-
-
-
-
+    // add selected class to the lis on window load
+    window.addEventListener('load', (event) => {
+        indicators.forEach((ind, counter) =>
+        {
+            if(counter < numVisSlides)
+                ind.classList.add('selected');
+        });
+    });
 
     function indicateGrayArrow() {
         if (index == 0)
@@ -40,18 +44,28 @@ sections.forEach(section => {
     function slideOperations() {
         slider.style.transform = 'translateX(' + (index) * (-(100 / totalSlides)) + "%)";
 
-        section.querySelector('.control .selected').classList.remove('selected');
+        indicators.forEach((ind, counter) =>
+        {
+            if(counter >= index && counter < (index + parseInt(numVisSlides)))
+            {
+                ind.classList.add('selected');
+            }
+            else
+            {
+                ind.classList.remove('selected');
+            }    
+        });
 
-        indicatorContainer.children[index].classList.add('selected');
     }
 
 
-    indicators.forEach((indicator, ind) => {
-        indicator.addEventListener('click', () => {
-            index = ind;
-            slideOperations();
-        });
-    });
+    // indicators.forEach((indicator, ind) => {
+    //     if(ind)
+    //     indicator.addEventListener('click', () => {
+    //         index = ind;
+    //         slideOperations();
+    //     });
+    // });
 
     right_arrow.addEventListener('click', () => {
         if (index != swipes) {
@@ -66,7 +80,6 @@ sections.forEach(section => {
         if (index != 0) {
             // changes the index to current slide
             index = (index - 1);
-            console.log(index);
             indicateGrayArrow();
             slideOperations();
         }
