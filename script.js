@@ -1,4 +1,3 @@
-
 const carousel = document.querySelector('.carousel');
 
 const left_arrow = document.querySelector('.left');
@@ -10,6 +9,7 @@ const indicatorContainer = document.querySelector('.indicators');
 const indicators = document.querySelectorAll('.indicators li');
 
 const totalSlides = slider.childElementCount;
+
 
 
 var index = 0;

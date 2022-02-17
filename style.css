@@ -5,10 +5,8 @@
 }
 
 :root {
-
   --num-slides: 4;
-    --caraousel-width: 80vw;
-  --slider-width: calc(var(--caraousel-width) * var(--num-slides));
+  --num-vis-slides: 2;
 }
 
 h2
@@ -21,7 +19,7 @@ h2
 {
     position: relative;
     height: 20vh;
-    width: 80vw;
+    width: 81vw;
     margin: auto;
 }
 
@@ -30,23 +28,20 @@ h2
   height: 100%;
   width: 100%;
   overflow: hidden;
-  
   display: flex;
-  border: 2px solid black;
   margin: 20px auto;
 
 }
 
 .slider {
   height: 100%;
-  width: var(--slider-width);
   display: flex;
   transition: all 0.5s;
 }
 
 .primary {
   height: 100%;
-  width: var(--caraousel-width);
+  width: 27vw;
   display: flex;
   justify-content: center;
   align-items: center;
