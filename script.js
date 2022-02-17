@@ -1,6 +1,4 @@
-
 const sections = document.querySelectorAll('section');
-
 sections.forEach(section => {
 
     const left_arrow = section.querySelector('.left');
@@ -58,15 +56,6 @@ sections.forEach(section => {
 
     }
 
-
-    // indicators.forEach((indicator, ind) => {
-    //     if(ind)
-    //     indicator.addEventListener('click', () => {
-    //         index = ind;
-    //         slideOperations();
-    //     });
-    // });
-
     right_arrow.addEventListener('click', () => {
         if (index != swipes) {
             // changes the index to cureent slide
@@ -84,7 +73,11 @@ sections.forEach(section => {
             slideOperations();
         }
     });
-
-
 });
 
+// Sponsors
+const sponsVisible = getComputedStyle(document.documentElement).getPropertyValue("--num-vis-spons");
+const marqueeContent = document.querySelector(".sponsors-content");
+
+for(let i=0; i < sponsVisible; i++) 
+  marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
