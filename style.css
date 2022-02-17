@@ -5,8 +5,8 @@
 }
 
 :root {
-  --num-slides: 4;
-  --num-vis-slides: 2;
+  --num-vis-slides: 3;
+  --caro-container-width: 81vw;
 }
 
 h2
@@ -19,7 +19,7 @@ h2
 {
     position: relative;
     height: 20vh;
-    width: 81vw;
+    width: var(--caro-container-width);
     margin: auto;
 }
 
@@ -41,7 +41,7 @@ h2
 
 .primary {
   height: 100%;
-  width: 27vw;
+  width: calc( var(--caro-container-width) / var(--num-vis-slides));
   display: flex;
   justify-content: center;
   align-items: center;

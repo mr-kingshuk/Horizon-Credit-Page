@@ -1,5 +1,3 @@
-const carousel = document.querySelector('.carousel');
-
 const left_arrow = document.querySelector('.left');
 const right_arrow = document.querySelector('.right');
 
@@ -13,6 +11,10 @@ const totalSlides = slider.childElementCount;
 
 
 var index = 0;
+var numVisSlides =  getComputedStyle(document.querySelector(':root')).getPropertyValue('--num-vis-slides');
+// number of times we can swipe left or right
+var swipes = totalSlides - numVisSlides;
+
 
 function grayen()
 {
