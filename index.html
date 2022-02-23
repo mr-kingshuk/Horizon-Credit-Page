@@ -1,60 +1,486 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- favicon  link -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <!-- css stylesheets link -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/card.css">
+    <link rel="stylesheet" href="CSS/carousel.css">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/sponsors.css">
     <title>Horizon Credits Page</title>
 </head>
-<body>
+
+<body onload="preload()">
+
+    <div class="preloader">
+        <div class="bg">
+          <div class="expand"></div>
+        </div>
+        <img src="images/EVENT-LOGO.png" alt="">
+      </div>
+
     <main>
 
-        <section>
-            <h2>Developers</h2>
+        <section class="visual-team">
+            <h2>Visual Team</h2>
             <div class="caro-container">
                 <div class="carousel">
-                    <div class="slider" >
-                        <div class ="primary">1</div>
-                        <div class ="primary">2</div>
-                        <div class ="primary">3</div>
-                        <div class ="primary">4</div>
-                        <div class ="primary">5</div>
+                    <div class="slider">
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="control">
-                        <span class="arrow left arrow-grey">&lt;</span>
-                        <span class="arrow right">&gt;</span>
+                        <span class="arrow left arrow-grey">
+                            <i class="fa-solid fa-circle-chevron-left"></i>
+                        </span>
+                        <span class="arrow right">
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </span>
                         <ul class="indicators">
                             <li></li>
                             <li></li>
                             <li></li>
                             <li></li>
                             <li></li>
+                            <li></li>
+                            <li></li>
                         </ul>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </section>
-        <section>
+
+        <section class="developers">
             <h2>Developers</h2>
             <div class="caro-container">
                 <div class="carousel">
-                    <div class="slider" >
-                        <div class ="primary">1</div>
-                        <div class ="primary">2</div>
-                        <div class ="primary">3</div>
-                        <div class ="primary">4</div>
-                        <div class ="primary">5</div>
-                        <div class ="primary">6</div>
+                    <div class="slider">
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="control">
-                        <span class="arrow left arrow-grey">&lt;</span>
-                        <span class="arrow right">&gt;</span>
+                        <span class="arrow left arrow-grey">
+                            <i class="fa-solid fa-circle-chevron-left"></i>
+                        </span>
+                        <span class="arrow right">
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </span>
+                        <ul class="indicators">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hackathon">
+            <h2>Hackathon</h2>
+            <div class="caro-container">
+                <div class="carousel">
+                    <div class="slider">
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <span class="arrow left arrow-grey">
+                            <i class="fa-solid fa-circle-chevron-left"></i></span>
+                        <span class="arrow right">
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </span>
+                        <ul class="indicators">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="game-jam">
+            <h2>Game Jam</h2>
+            <div class="caro-container">
+                <div class="carousel">
+                    <div class="slider">
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <span class="arrow left arrow-grey">
+                            <i class="fa-solid fa-circle-chevron-left"></i>
+                        </span>
+                        <span class="arrow right">
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </span>
                         <ul class="indicators">
                             <li></li>
                             <li></li>
@@ -63,26 +489,554 @@
                             <li></li>
                             <li></li>
                         </ul>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </section>
 
-    </main>    
+        <section class="game-night">
+            <h2>Game Night</h2>
+            <div class="caro-container">
+                <div class="carousel">
+                    <div class="slider">
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <span class="arrow left arrow-grey">
+                            <i class="fa-solid fa-circle-chevron-left"></i>
+                        </span>
+                        <span class="arrow right">
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </span>
+                        <ul class="indicators">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <footer class = "sponsors">
-       <ul class="sponsors-content">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-        <li>7</li>
-        <li>8</li>
-        <li>9</li>
-       </ul>
+        <section class="data-science">
+            <h2>Data Science Domain</h2>
+            <div class="caro-container">
+                <div class="carousel">
+                    <div class="slider">
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <span class="arrow left arrow-grey">
+                            <i class="fa-solid fa-circle-chevron-left"></i>
+                        </span>
+                        <span class="arrow right">
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </span>
+                        <ul class="indicators">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="management">
+            <h2>Management</h2>
+            <div class="caro-container">
+                <div class="carousel">
+                    <div class="slider">
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <span class="arrow left arrow-grey">
+                            <i class="fa-solid fa-circle-chevron-left"></i>
+                        </span>
+                        <span class="arrow right"><i class="fa-solid fa-circle-chevron-right"></i></span>
+                        <ul class="indicators">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comapetative">
+            <h2>Competative Domain</h2>
+            <div class="caro-container">
+                <div class="carousel">
+                    <div class="slider">
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <span class="arrow left arrow-grey">
+                            <i class="fa-solid fa-circle-chevron-left"></i>
+                        </span>
+                        <span class="arrow right">
+                            <i class="fa-solid fa-circle-chevron-right"></i></span>
+                        <ul class="indicators">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="marketing">
+            <h2>Marketing & Spons Team</h2>
+            <div class="caro-container">
+                <div class="carousel">
+                    <div class="slider">
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary">
+                            <div class="card">
+                                <div class="profile-pic">
+                                    <img src="images/Horizon Photos/Hackathon/kingshuk.jpeg">
+                                </div>
+                                <div class="details">
+                                    <h3>Kingshuk Ghosh</h3>
+                                    <div class="college">LNMIIT</div>
+                                    <div class="icons">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <span class="arrow left arrow-grey">
+                            <i class="fa-solid fa-circle-chevron-left"></i>
+                        </span>
+                        <span class="arrow right">
+                            <i class="fa-solid fa-circle-chevron-right"></i></span>
+                        <ul class="indicators">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="sponsors">
+        <ul class="sponsors-content">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+        </ul>
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>

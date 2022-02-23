@@ -1,0 +1,44 @@
+.card{
+    width: 60%;
+    padding: 30px 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.card .profile-pic{
+    width: 50%;
+    aspect-ratio: 1/1;
+}
+
+.card .profile-pic img{
+    width: 100%;
+    border-radius: 50%; 
+    height: auto;
+} 
+
+.card .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.card .details h3{
+    text-align: center;
+}
+
+.card .deatils .college{
+    text-align: center;
+}
+
+.card .details .icons i{
+    margin: 5px;
+    font-size: 20px; 
+}

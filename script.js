@@ -20,9 +20,8 @@ sections.forEach(section => {
 
     // add selected class to the lis on window load
     window.addEventListener('load', (event) => {
-        indicators.forEach((ind, counter) =>
-        {
-            if(counter < numVisSlides)
+        indicators.forEach((ind, counter) => {
+            if (counter < numVisSlides)
                 ind.classList.add('selected');
         });
     });
@@ -42,16 +41,13 @@ sections.forEach(section => {
     function slideOperations() {
         slider.style.transform = 'translateX(' + (index) * (-(100 / totalSlides)) + "%)";
 
-        indicators.forEach((ind, counter) =>
-        {
-            if(counter >= index && counter < (index + parseInt(numVisSlides)))
-            {
+        indicators.forEach((ind, counter) => {
+            if (counter >= index && counter < (index + parseInt(numVisSlides))) {
                 ind.classList.add('selected');
             }
-            else
-            {
+            else {
                 ind.classList.remove('selected');
-            }    
+            }
         });
 
     }
@@ -79,5 +75,21 @@ sections.forEach(section => {
 const sponsVisible = getComputedStyle(document.documentElement).getPropertyValue("--num-vis-spons");
 const marqueeContent = document.querySelector(".sponsors-content");
 
-for(let i=0; i < sponsVisible; i++) 
-  marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+for (let i = 0; i < sponsVisible; i++)
+    marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+
+// Preloader JS
+function preload(){
+    const preloader = document.querySelector('.preloader');
+    const image = document.querySelector('.preloader img');
+    const expand = document.querySelector('.preloader .expand');
+    
+    setTimeout(()=>{
+        expand.style.opacity = '0';
+        expand.style.transform = 'scale(0)';
+        image.style.opacity = '0';
+        expand.addEventListener('transitionend', ()=>{
+        preloader.style.display = 'none';
+    });
+    }, 800);
+}   
