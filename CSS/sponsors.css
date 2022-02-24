@@ -36,3 +36,13 @@
   place-items: center;
 }
 /* adjust speed and number of visible in responsiveness */
+
+.sponsors .image{
+  width:80%;
+  aspect-ratio: 1/1;
+}
+
+.sponsors .image img{
+  width:100%;
+  height: auto;
+}
