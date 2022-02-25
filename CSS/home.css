@@ -1,3 +1,11 @@
+html{
+  scroll-behavior: smooth;
+}
+
+h1{
+  text-align: center;
+}
+
 /* preloader CSS */
 .preloader {
   position: fixed;
@@ -61,7 +69,13 @@
   border: 2px solid black;
   position: fixed;
   bottom: 100px;
+  right: -20px;
+  transition: all 0.1s ease-in-out;
+}
+
+.scroll{
   right: 25px;
+  display: block;
 }
 
 .back-home a,

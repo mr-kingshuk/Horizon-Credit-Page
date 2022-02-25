@@ -93,3 +93,10 @@ function preload(){
     });
     }, 800);
 }   
+
+//back to top
+window.addEventListener('scroll', ()=>{
+    let windowPosition =  window.scrollY > 100;
+    console.log(windowPosition);
+    document.querySelector('.back-top').classList.toggle('scroll', windowPosition);
+});

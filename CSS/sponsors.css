@@ -1,8 +1,13 @@
+:root {
+  --num-vis-spons: 7;
+  --spons-translate: calc(-100% / var(--num-vis-spons) * 8);
+}
+
 .sponsors {
   height: 8vh;
   width: 100vw;
-  background-color: grey;
-  opacity: 0.5;
+  background-color: black;
+  opacity: 0.9;
   position: fixed;
   bottom: 0;
   overflow: hidden;
@@ -15,6 +20,10 @@
   animation: scrolling 20s linear infinite;
 }
 
+.sponsors-content:hover{
+  animation-play-state: paused;
+}
+
 @keyframes scrolling {
   0% {
     transform: translateX(0);
@@ -25,8 +34,6 @@
 }
 
 .sponsors-content li {
-  color: black;
-  border: 2px solid black;
   list-style: none;
   height: 100%;
   width: calc(100% / var(--num-vis-spons));
@@ -38,8 +45,11 @@
 /* adjust speed and number of visible in responsiveness */
 
 .sponsors .image{
-  width:80%;
+  height: 55%;
   aspect-ratio: 1/1;
+  display: grid;
+  place-items: center;
+
 }
 
 .sponsors .image img{

@@ -7,8 +7,6 @@
 :root {
   --num-vis-slides: 3;
   --caro-container-width: 81vw;
-  --num-vis-spons: 5;
-  --spons-translate: calc(-100% / var(--num-vis-spons) * 9);
 }
 
 section {
